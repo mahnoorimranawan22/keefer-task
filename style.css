@@ -1,0 +1,935 @@
+/* ==========================================================================
+   Keefer Law Firm PLC - Times New Roman Headings & Centered Elements
+   ========================================================================== */
+
+/* --- Reset & Global Box Sizing --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+/* Global Body / Paragraph Text */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 1.5;
+    color: #444444;
+    background: #E8E8E8;
+    padding: 15px 0;
+}
+
+/* Global Headings: Times New Roman for all titles & headers */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.page-title,
+.widget-title,
+.feature-title,
+.form-title,
+.call-title,
+.form-tag {
+    font-family: "Times New Roman", Georgia, serif !important;
+}
+
+/* Page Outer Frame & Centered Content Container */
+.page-wrapper {
+    width: 1180px;
+    max-width: 1180px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    border: 1px solid #CCCCCC;
+}
+
+/* Utility & Global Classes */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    color: #800000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Red Text Highlight Span */
+h2 span,
+h3 span,
+h4 span,
+.red-text {
+    color: #800000;
+}
+
+/* Gold Accent Highlight */
+.gold-text,
+.gold-accent {
+    color: #D4AF37;
+}
+
+/* CTA Button Labels */
+.btn {
+    display: inline-block;
+    background: #800000;
+    color: #FFFFFF !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    text-transform: uppercase;
+    padding: 6px 14px;
+    border-radius: 2px;
+    border: none;
+    text-decoration: none !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background: #990000;
+}
+
+/* Centered Action Buttons (ALL CLICK HERE / LEARN MORE Buttons) */
+.btn-action {
+    font-size: 13px;
+    padding: 5px 16px;
+    display: table !important;
+    margin: 8px auto 0 auto !important;
+    float: none !important;
+    text-align: center;
+    border-radius: 2px;
+}
+
+
+/* ==========================================================================
+   1. Header Section (120px Height)
+   ========================================================================== */
+.site-header {
+    background: #FFFFFF;
+    border-bottom: 1px solid #666666;
+    height: 120px;
+    padding: 10px 25px;
+    display: flex;
+    align-items: center;
+}
+
+.header-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Brand Logo: Georgia, Serif, Bold, Uppercase, 28px-32px, #333333 */
+.logo-container .site-logo {
+    width: 455px;
+    max-height: 102px;
+    object-fit: contain;
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+.header-contact {
+    text-align: right;
+}
+
+/* Call To Action Heading: CALL OUR OFFICES NOW! (Helvetica, Sans-Serif, Bold, Uppercase, 16px-18px, #800000) */
+.header-contact .call-title {
+    display: block;
+    color: #990000;
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 27px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+
+/* Header Phone Number */
+.header-contact .phone-number {
+    display: block;
+    color: #111111;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 46px;
+    font-weight: bold;
+    line-height: 1.05;
+    letter-spacing: -0.5px;
+    margin: 1px 0;
+}
+
+.header-contact .phone-number:hover {
+    text-decoration: none;
+    color: #990000;
+}
+
+.header-contact .call-subtitle {
+    display: block;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+}
+
+/* ==========================================================================
+   2. Primary Navigation Bar (1180px width, 44px height, #800000)
+   ========================================================================== */
+.main-navigation {
+    background: #800000;
+    height: 44px;
+    border-bottom: 1px solid #666666;
+}
+
+.nav-container {
+    width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+.nav-toggle-checkbox {
+    display: none;
+}
+
+.mobile-menu-btn {
+    display: none;
+    background: transparent;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.mobile-menu-btn img {
+    height: 22px;
+    width: auto;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu li {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* Top Navigation Links */
+.nav-menu li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #FFFFFF !important;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0 22px;
+    text-decoration: none !important;
+    letter-spacing: 0.5px;
+    border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.nav-menu li:first-child a {
+    border-left: none;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+    background: #990000;
+}
+
+/* ==========================================================================
+   3. Hero Header Grid (Left Media Banner 660px / Right Lead Form 450px)
+   ========================================================================== */
+.hero-section {
+    padding: 10px 25px 0 25px;
+}
+
+.hero-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Left Media Banner */
+.hero-banner {
+    width: 660px;
+    height: 375px;
+    position: relative;
+    border: 1px solid #CCCCCC;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background-color: #000000;
+    flex-shrink: 0;
+}
+
+.hero-banner .banner-img {
+    width: 658px;
+    height: 373px;
+    object-fit: fill;
+}
+
+/* Right Lead Form */
+.hero-form-wrapper {
+    width: 450px;
+    height: 375px;
+    background: #EFEFEF url('images/form_bg.jpg') no-repeat center center / cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    padding: 15px 20px;
+    position: relative;
+    border-radius: 2px;
+    border: 1px solid #CCCCCC;
+    flex-shrink: 0;
+}
+
+.contact-form {
+    position: relative;
+    height: 100%;
+}
+
+.form-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+/* Form Tag: QUESTIONS? (Helvetica, Sans-Serif, Bold, Uppercase, 18px-20px, #FFFFFF) */
+.form-tag {
+    background: #800000;
+    color: #FFFFFF;
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-weight: bold;
+    font-size: 21px;
+    padding: 2px 8px;
+    border-radius: 2px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* Form Title: Have a Question About Your Case? (Helvetica, Sans-Serif, Bold, Title Case, 18px-20px, #112244) */
+.form-title {
+    font-family: Helvetica, Arial, sans-serif !important;
+    font-size: 21px;
+    color: #112244;
+    line-height: 1.15;
+    font-weight: bold;
+    text-transform: none;
+}
+
+.form-title span {
+    color: #112244;
+    font-size: 21px;
+}
+
+/* Form Instructions */
+.form-instruction {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: normal;
+    color: #444444;
+    margin-bottom: 10px;
+    line-height: 1.35;
+    padding-right: 80px;
+}
+
+.confidential-badge {
+    position: absolute;
+    top: 115px;
+    right: 25px;
+    width: 165px;
+    transform: rotate(12deg);
+    opacity: 0.95;
+    pointer-events: none;
+    z-index: 5;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.form-group label {
+    width: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #555555;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"] {
+    width: 185px;
+    height: 25px;
+    padding: 2px 6px;
+    font-size: 13px;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+}
+
+.form-group textarea {
+    width: 405px;
+    height: 64px;
+    padding: 5px 8px;
+    font-size: 13px;
+    font-weight: normal;
+    border: 1px solid #CCCCCC;
+    background-color: #FFFFFF;
+    border-radius: 2px;
+    resize: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+}
+
+.form-group textarea::placeholder {
+    font-style: italic;
+    font-size: 13px;
+    color: #777777;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.privacy-notice {
+    font-size: 12px;
+    font-style: italic;
+    color: #777777;
+}
+
+.btn-submit {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 6px 14px;
+}
+
+/* ==========================================================================
+   4. Middle Callout Grid (3 Promo Cards & Badges)
+   ========================================================================== */
+.features-section {
+    padding: 0;
+    margin: 10px 25px 10px 25px;
+    background-color: #FFFFFF;
+}
+
+.features-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.feature-dui {
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.feature-middle {
+    width: 380px;
+    flex-shrink: 0;
+}
+
+.feature-credentials {
+    width: 380px;
+    flex-shrink: 0;
+}
+
+.feature-card {
+    border-right: 1px solid #CCCCCC;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature-card:last-child {
+    border-right: none;
+    padding-right: 0;
+}
+
+.feature-title {
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333333;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.feature-dui .feature-title {
+    color: #800000;
+}
+
+.feature-middle .feature-subblock:first-child .feature-title {
+    color: #800000;
+}
+
+.feature-subtitle {
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-size: 15px;
+    color: #800000;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.feature-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.feature-text {
+    flex: 1;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    color: #444444;
+    line-height: 1.45;
+}
+
+.feature-text p {
+    margin-bottom: 4px;
+}
+
+.feature-icon img {
+    max-width: 150px;
+    display: block;
+}
+
+.feature-dui .feature-icon img {
+    height: 138px;
+    width: auto;
+}
+
+/* Perfect Centering for ALL CLICK HERE Buttons */
+.feature-action {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    clear: both;
+}
+
+.feature-action .btn-action {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+    background: #800000;
+    padding: 5px 16px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    float: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.feature-middle .feature-subblock {
+    margin-bottom: 6px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.feature-middle .feature-subblock:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.feature-credentials .badges-row {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 6px;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.feature-credentials .badge-img {
+    height: 108px;
+    width: auto;
+}
+
+.credentials-text {
+    font-size: 14px;
+    color: #444444;
+    line-height: 1.45;
+    margin-top: 4px;
+}
+
+/* Section Separator Line */
+.main-content {
+    padding: 0;
+    margin: 0 25px 10px 25px;
+    border-top: 1px solid #CCCCCC;
+    padding-top: 10px;
+    background-color: #FFFFFF;
+}
+
+/* ==========================================================================
+   5. Bottom Content Grid (Balanced Grid: Left 250px / Main 620px / Right 250px)
+   ========================================================================== */
+.main-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+/* Left Sidebar Column (250px) */
+.sidebar-left {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+/* Widget Titles: Times New Roman */
+.widget-title {
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 12px;
+    border-bottom: 1px solid #CCCCCC;
+    padding-bottom: 4px;
+    text-transform: uppercase;
+}
+
+.practice-areas-list {
+    list-style: none;
+    margin-bottom: 12px;
+}
+
+.practice-areas-list li {
+    margin-bottom: 6px;
+}
+
+.practice-area-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+    height: 52px;
+    background: #333333;
+    border-left: 7px solid #800000;
+    border-top: 1px solid #CCCCCC;
+    border-right: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    color: #FFFFFF !important;
+    padding: 6px 12px;
+    border-radius: 2px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    text-decoration: none !important;
+}
+
+.practice-area-item:hover {
+    background: #444444;
+}
+
+.practice-area-item .area-name {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.2px;
+}
+
+.practice-area-item .area-action {
+    font-size: 13px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.learn-more-widget {
+    margin-top: 12px;
+    text-align: center;
+}
+
+.learn-more-widget .sub-menu-list {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    color: #D0D0D0;
+    line-height: 1.3;
+    padding: 6px 0;
+    text-align: center;
+}
+
+/* Main Content Area Column (620px) */
+.content-body {
+    width: 620px;
+    flex-shrink: 0;
+}
+
+/* Page Title (<H1>): Times New Roman */
+.page-title {
+    font-size: 27px;
+    color: #555555;
+    font-family: "Times New Roman", Georgia, serif !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.entry-content p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: normal;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* Right Sidebar Column (250px) */
+.sidebar-right {
+    width: 250px;
+    flex-shrink: 0;
+}
+
+.right-widget {
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px dashed #CCCCCC;
+    overflow: hidden;
+}
+
+.right-widget .widget-title {
+    font-size: 20px;
+}
+
+.right-widget p {
+    font-size: 15px;
+    color: #444444;
+    margin-bottom: 4px;
+    line-height: 1.25;
+}
+
+.rating-badges-widget {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0;
+}
+
+.rating-badges-widget img {
+    width: 185px;
+    display: block;
+}
+
+/* Centered Social Widget & Links */
+.social-widget {
+    overflow: hidden;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.social-widget .widget-title {
+    font-size: 20px;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    gap: 8px;
+    margin-top: 8px;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-links img {
+    width: 46px;
+    height: 46px;
+    border-radius: 2px;
+}
+
+/* ==========================================================================
+   6. Footer Section
+   ========================================================================== */
+.site-footer {
+    background: #800000;
+    border-top: 1px solid #CCCCCC;
+    padding: 10px 20px;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 13px;
+}
+
+.footer-container p {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* ==========================================================================
+   Responsive Breakpoints & Media Queries
+   ========================================================================== */
+
+/* Tablet Viewport (max-width: 1180px) */
+@media (max-width: 1180px) {
+    .page-wrapper {
+        width: 100%;
+        max-width: 1180px;
+    }
+
+    .hero-section,
+    .features-section,
+    .main-content {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+/* Mobile Viewport (max-width: 768px) */
+@media (max-width: 768px) {
+    .page-wrapper {
+        width: 100%;
+        border: none;
+        box-shadow: none;
+    }
+
+    .site-header {
+        height: auto;
+        padding: 15px;
+        flex-direction: column;
+    }
+
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+        gap: 12px;
+    }
+
+    .logo-container .site-logo {
+        width: 280px;
+        max-height: 65px;
+    }
+
+    .header-contact {
+        text-align: center;
+    }
+
+    .mobile-menu-btn {
+        display: inline-block;
+    }
+
+    .nav-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-toggle-checkbox:checked~.nav-menu {
+        display: flex;
+    }
+
+    .nav-menu li {
+        width: 100%;
+        height: auto;
+    }
+
+    .nav-menu li a {
+        border-left: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.15);
+        text-align: left;
+        padding: 12px 15px;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-banner,
+    .hero-form-wrapper {
+        width: 100%;
+        max-width: 660px;
+    }
+
+    .features-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-dui,
+    .feature-middle,
+    .feature-credentials {
+        width: 100%;
+        border-right: none;
+        border-bottom: 1px dashed #CCCCCC;
+        padding-right: 0;
+        padding-bottom: 15px;
+    }
+
+    .feature-card:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+
+    .main-container {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .sidebar-left,
+    .content-body,
+    .sidebar-right {
+        width: 100%;
+    }
+
+    .practice-area-item {
+        width: 100%;
+    }
+
+    .entry-content p {
+        text-align: left;
+    }
+
+    .rating-badges-widget {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
