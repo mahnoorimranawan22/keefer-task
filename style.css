@@ -18,7 +18,7 @@ body {
 /* Global Body / Paragraph Text */
 body {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     line-height: 1.5;
     color: #444444;
@@ -44,8 +44,8 @@ h6,
 
 /* Page Outer Frame & Centered Content Container */
 .page-wrapper {
-    width: 1180px;
-    max-width: 1180px;
+    width: 1250px;
+    max-width: 1250px;
     margin: 0 auto;
     background-color: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
@@ -89,7 +89,8 @@ h4 span,
     color: #FFFFFF !important;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 16px;
     text-transform: uppercase;
     padding: 6px 14px;
     border-radius: 2px;
@@ -107,7 +108,8 @@ h4 span,
 
 /* Centered Action Buttons (ALL CLICK HERE / LEARN MORE Buttons) */
 .btn-action {
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 16px;
     padding: 5px 16px;
     display: table !important;
     margin: 8px auto 0 auto !important;
@@ -153,7 +155,7 @@ h4 span,
     display: block;
     color: #990000;
     font-family: Georgia, "Times New Roman", serif;
-    font-size: 27px;
+    font-size: 30px;
     font-weight: bold;
     letter-spacing: 1px;
     text-transform: uppercase;
@@ -165,7 +167,7 @@ h4 span,
     display: block;
     color: #111111;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 46px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 1.05;
     letter-spacing: -0.5px;
@@ -181,7 +183,7 @@ h4 span,
     display: block;
     color: #555555;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
+    font-size: 18px;
     font-weight: normal;
 }
 
@@ -195,7 +197,7 @@ h4 span,
 }
 
 .nav-container {
-    width: 1180px;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
     position: relative;
@@ -242,7 +244,7 @@ h4 span,
     height: 100%;
     color: #FFFFFF !important;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: bold;
     text-transform: uppercase;
     padding: 0 22px;
@@ -264,18 +266,18 @@ h4 span,
    3. Hero Header Grid (Left Media Banner 660px / Right Lead Form 450px)
    ========================================================================== */
 .hero-section {
-    padding: 10px 25px 0 25px;
+    padding: 10px 10px 0 10px;
 }
 
 .hero-container {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 /* Left Media Banner */
 .hero-banner {
-    width: 660px;
+    width: 725px;
     height: 375px;
     position: relative;
     border: 1px solid #CCCCCC;
@@ -285,7 +287,7 @@ h4 span,
 }
 
 .hero-banner .banner-img {
-    width: 658px;
+    width: 723px;
     height: 373px;
     object-fit: fill;
 }
@@ -296,7 +298,7 @@ h4 span,
     height: 375px;
     background: #EFEFEF url('images/form_bg.jpg') no-repeat center center / cover;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
-    padding: 15px 20px;
+    padding: 12px 20px;
     position: relative;
     border-radius: 2px;
     border: 1px solid #CCCCCC;
@@ -310,8 +312,8 @@ h4 span,
 
 .form-header {
     display: flex;
-    align-items: flex-start;
-    gap: 8px;
+    align-items: center;
+    gap: 10px;
     margin-bottom: 8px;
 }
 
@@ -321,7 +323,7 @@ h4 span,
     color: #FFFFFF;
     font-family: Helvetica, Arial, sans-serif !important;
     font-weight: bold;
-    font-size: 21px;
+    font-size: 23px;
     padding: 2px 8px;
     border-radius: 2px;
     letter-spacing: 0.5px;
@@ -332,7 +334,7 @@ h4 span,
 /* Form Title: Have a Question About Your Case? (Helvetica, Sans-Serif, Bold, Title Case, 18px-20px, #112244) */
 .form-title {
     font-family: Helvetica, Arial, sans-serif !important;
-    font-size: 21px;
+    font-size: 23px;
     color: #112244;
     line-height: 1.15;
     font-weight: bold;
@@ -341,13 +343,13 @@ h4 span,
 
 .form-title span {
     color: #112244;
-    font-size: 21px;
+    font-size: 23px;
 }
 
 /* Form Instructions */
 .form-instruction {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     color: #444444;
     margin-bottom: 10px;
@@ -357,9 +359,9 @@ h4 span,
 
 .confidential-badge {
     position: absolute;
-    top: 115px;
-    right: 25px;
-    width: 165px;
+    top: 145px;
+    right: 15px;
+    width: 140px;
     transform: rotate(12deg);
     opacity: 0.95;
     pointer-events: none;
@@ -375,7 +377,7 @@ h4 span,
 .form-group label {
     width: 55px;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: bold;
     text-transform: uppercase;
     color: #555555;
@@ -387,17 +389,17 @@ h4 span,
     width: 185px;
     height: 25px;
     padding: 2px 6px;
-    font-size: 13px;
+    font-size: 14px;
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
     border-radius: 2px;
 }
 
 .form-group textarea {
-    width: 405px;
+    width: 100%;
     height: 64px;
     padding: 5px 8px;
-    font-size: 13px;
+    font-size: 14px;
     font-weight: normal;
     border: 1px solid #CCCCCC;
     background-color: #FFFFFF;
@@ -409,7 +411,7 @@ h4 span,
 
 .form-group textarea::placeholder {
     font-style: italic;
-    font-size: 13px;
+    font-size: 14px;
     color: #777777;
 }
 
@@ -417,18 +419,18 @@ h4 span,
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 8px;
 }
 
 .privacy-notice {
-    font-size: 12px;
+    font-size: 13px;
     font-style: italic;
     color: #777777;
 }
 
 .btn-submit {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -440,28 +442,28 @@ h4 span,
    ========================================================================== */
 .features-section {
     padding: 0;
-    margin: 10px 25px 10px 25px;
+    margin: 10px 10px 10px 10px;
     background-color: #FFFFFF;
 }
 
 .features-container {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .feature-dui {
-    width: 320px;
+    width: 400px;
     flex-shrink: 0;
 }
 
 .feature-middle {
-    width: 380px;
+    width: 455px;
     flex-shrink: 0;
 }
 
 .feature-credentials {
-    width: 380px;
+    width: 300px;
     flex-shrink: 0;
 }
 
@@ -470,7 +472,7 @@ h4 span,
     padding-right: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .feature-card:last-child {
@@ -480,24 +482,28 @@ h4 span,
 
 .feature-title {
     font-family: "Times New Roman", Georgia, serif !important;
-    font-size: 18px;
+    font-size: 24px;
     font-weight: bold;
     color: #333333;
     text-transform: uppercase;
     margin-bottom: 3px;
 }
 
-.feature-dui .feature-title {
+.feature-title span {
     color: #800000;
 }
 
+.feature-dui .feature-title {
+    color: #333333;
+}
+
 .feature-middle .feature-subblock:first-child .feature-title {
-    color: #800000;
+    color: #333333;
 }
 
 .feature-subtitle {
     font-family: "Times New Roman", Georgia, serif !important;
-    font-size: 15px;
+    font-size: 20px;
     color: #800000;
     font-weight: bold;
     margin-bottom: 8px;
@@ -513,10 +519,10 @@ h4 span,
 .feature-text {
     flex: 1;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 17px;
     font-weight: normal;
     color: #444444;
-    line-height: 1.45;
+    line-height: 1.5;
 }
 
 .feature-text p {
@@ -533,6 +539,42 @@ h4 span,
     width: auto;
 }
 
+.feature-middle .feature-icon img {
+    height: 110px;
+    width: auto;
+}
+
+.feature-card,
+.feature-text,
+.feature-icon,
+.hero-banner,
+.hero-form-wrapper,
+.sidebar-left,
+.content-body,
+.sidebar-right {
+    min-width: 0;
+}
+
+.feature-text,
+.credentials-text,
+.entry-content p,
+.right-widget p,
+.practice-area-item {
+    overflow-wrap: break-word;
+}
+
+.feature-dui .feature-subtitle {
+    margin-bottom: 4px;
+}
+
+.feature-dui .feature-text p {
+    margin-bottom: 3px;
+}
+
+.feature-dui .feature-action {
+    margin-top: 6px;
+}
+
 /* Perfect Centering for ALL CLICK HERE Buttons */
 .feature-action {
     margin-top: 10px;
@@ -546,7 +588,8 @@ h4 span,
 
 .feature-action .btn-action {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+    line-height: 16px;
     font-weight: bold;
     text-transform: uppercase;
     color: #FFFFFF !important;
@@ -575,10 +618,22 @@ h4 span,
 
 .feature-credentials .badges-row {
     display: flex;
-    gap: 12px;
-    margin-bottom: 6px;
+    gap: 8px;
+    margin-bottom: 4px;
     align-items: center;
     justify-content: flex-start;
+}
+
+.feature-credentials .feature-title {
+    margin-bottom: 2px;
+}
+
+.feature-credentials .credentials-text {
+    margin-top: 0;
+}
+
+.feature-credentials .feature-action {
+    margin-top: 6px;
 }
 
 .feature-credentials .badge-img {
@@ -587,16 +642,16 @@ h4 span,
 }
 
 .credentials-text {
-    font-size: 14px;
+    font-size: 17px;
     color: #444444;
-    line-height: 1.45;
+    line-height: 1.5;
     margin-top: 4px;
 }
 
 /* Section Separator Line */
 .main-content {
     padding: 0;
-    margin: 0 25px 10px 25px;
+    margin: 0 10px 10px 10px;
     border-top: 1px solid #CCCCCC;
     padding-top: 10px;
     background-color: #FFFFFF;
@@ -608,19 +663,21 @@ h4 span,
 .main-container {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-/* Left Sidebar Column (250px) */
+/* Left Sidebar Column (300px) */
 .sidebar-left {
-    width: 250px;
+    width: 300px;
     flex-shrink: 0;
+    border-right: 1px solid #CCCCCC;
+    padding-right: 20px;
 }
 
 /* Widget Titles: Times New Roman */
 .widget-title {
     font-family: "Times New Roman", Georgia, serif !important;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: bold;
     color: #333333;
     margin-bottom: 12px;
@@ -663,13 +720,13 @@ h4 span,
 .practice-area-item .area-name {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 17px;
     text-transform: uppercase;
     letter-spacing: 0.2px;
 }
 
 .practice-area-item .area-action {
-    font-size: 13px;
+    font-size: 14px;
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -683,22 +740,24 @@ h4 span,
     list-style: none;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 24px;
     color: #D0D0D0;
     line-height: 1.3;
     padding: 6px 0;
     text-align: center;
 }
 
-/* Main Content Area Column (620px) */
+/* Main Content Area Column (635px) */
 .content-body {
-    width: 620px;
+    width: 635px;
     flex-shrink: 0;
+    border-right: 1px solid #CCCCCC;
+    padding-right: 20px;
 }
 
 /* Page Title (<H1>): Times New Roman */
 .page-title {
-    font-size: 27px;
+    font-size: 30px;
     color: #555555;
     font-family: "Times New Roman", Georgia, serif !important;
     font-weight: bold;
@@ -708,7 +767,7 @@ h4 span,
 
 .entry-content p {
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: normal;
     color: #444444;
     line-height: 1.6;
@@ -716,9 +775,9 @@ h4 span,
     text-align: justify;
 }
 
-/* Right Sidebar Column (250px) */
+/* Right Sidebar Column (220px) */
 .sidebar-right {
-    width: 250px;
+    width: 220px;
     flex-shrink: 0;
 }
 
@@ -730,11 +789,11 @@ h4 span,
 }
 
 .right-widget .widget-title {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .right-widget p {
-    font-size: 15px;
+    font-size: 16px;
     color: #444444;
     margin-bottom: 4px;
     line-height: 1.25;
@@ -761,7 +820,7 @@ h4 span,
 }
 
 .social-widget .widget-title {
-    font-size: 20px;
+    font-size: 22px;
     text-align: center;
 }
 
@@ -788,7 +847,7 @@ h4 span,
     padding: 10px 20px;
     text-align: center;
     color: #FFFFFF;
-    font-size: 13px;
+    font-size: 14px;
 }
 
 .footer-container p {
@@ -800,18 +859,64 @@ h4 span,
    Responsive Breakpoints & Media Queries
    ========================================================================== */
 
-/* Tablet Viewport (max-width: 1180px) */
-@media (max-width: 1180px) {
-    .page-wrapper {
-        width: 100%;
-        max-width: 1180px;
+/* Large Tablet / Small Desktop (max-width: 1240px)
+   Wrapper becomes fluid; multi-column rows wrap and stay centered so
+   nothing overflows between 1024px and 1250px. */
+@media (max-width: 1240px) {
+    body {
+        overflow-x: hidden;
     }
 
-    .hero-section,
-    .features-section,
-    .main-content {
-        margin-left: 15px;
-        margin-right: 15px;
+    .page-wrapper {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .hero-container,
+    .features-container,
+    .main-container {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+/* Tablet Viewport (max-width: 1024px)
+   Hero stacks; columns become wrap-friendly 340px cards. */
+@media (max-width: 1024px) {
+    .hero-container {
+        gap: 15px;
+    }
+
+    .hero-banner,
+    .hero-form-wrapper {
+        width: 100%;
+        max-width: 660px;
+    }
+
+    .hero-banner,
+    .hero-banner .banner-img,
+    .hero-form-wrapper {
+        height: auto;
+    }
+
+    .hero-banner .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .feature-dui,
+    .feature-middle,
+    .feature-credentials,
+    .sidebar-left,
+    .content-body,
+    .sidebar-right {
+        width: 340px;
+        max-width: 100%;
+    }
+
+    .features-container,
+    .main-container {
+        gap: 20px;
     }
 }
 
@@ -878,15 +983,34 @@ h4 span,
         padding: 12px 15px;
     }
 
+    .hero-section,
+    .features-section,
+    .main-content {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
     .hero-container {
         flex-direction: column;
         align-items: center;
+        gap: 15px;
     }
 
     .hero-banner,
     .hero-form-wrapper {
         width: 100%;
-        max-width: 660px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .hero-banner .banner-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .confidential-badge {
+        width: 90px;
+        right: 10px;
     }
 
     .features-container {
@@ -898,6 +1022,7 @@ h4 span,
     .feature-middle,
     .feature-credentials {
         width: 100%;
+        max-width: 100%;
         border-right: none;
         border-bottom: 1px dashed #CCCCCC;
         padding-right: 0;
@@ -918,6 +1043,16 @@ h4 span,
     .content-body,
     .sidebar-right {
         width: 100%;
+        max-width: 100%;
+        border-right: none;
+        padding-right: 0;
+        border-bottom: 1px solid #CCCCCC;
+        padding-bottom: 15px;
+    }
+
+    .sidebar-right {
+        border-bottom: none;
+        padding-bottom: 0;
     }
 
     .practice-area-item {
